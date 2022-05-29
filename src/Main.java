@@ -13,10 +13,10 @@ public class Main {
         CreditPaymentService service = new CreditPaymentService();
         double YourPayment = (int) service.payment(amount, term);
 
-        if (YourPayment == 0){
+        if (YourPayment == 0) {
             System.out.println("You entered the wrong credit term");
             in.close();
-        }else {
+        } else {
             System.out.println("Your monthly payment = " + YourPayment);
             in.close();
         }
